@@ -3,6 +3,7 @@
   import Hero from '$lib/components/Hero.svelte';
   import CategoryNav from '$lib/components/CategoryNav.svelte';
   import MenuItem from '$lib/components/MenuItem.svelte';
+  import { onMount } from 'svelte';
 
   let activeCategory = $state(categories[0].id);
 
@@ -21,10 +22,35 @@
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
+
+  // Scroll Spy to update active category on manual scroll
+  onMount(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const id = entry.target.id.replace('category-', '');
+            activeCategory = id;
+          }
+        }
+      },
+      {
+        rootMargin: '-20% 0px -75% 0px',
+        threshold: 0
+      }
+    );
+
+    document.querySelectorAll('.category-section').forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  });
 </script>
 
 <svelte:head>
   <title>{restaurant.name} | Virtual Menu</title>
+  <meta name="description" content={restaurant.description} />
 </svelte:head>
 
 <div class="container">
@@ -68,7 +94,8 @@
   }
 
   .sidebar {
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 100;
     /* Allow sticky CategoryNav to work — sidebar must not shrink */
     align-self: stretch;
@@ -139,6 +166,7 @@
     }
 
     .sidebar {
+      position: static; /* Revert mobile sticky, CategoryNav handles it internally here */
       width: 220px;
       flex-shrink: 0;
       align-self: stretch; /* Must stretch for sticky CategoryNav to work */

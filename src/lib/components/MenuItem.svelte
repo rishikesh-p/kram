@@ -25,7 +25,11 @@
     <div class="item-footer">
       <span class="item-price">₹{item.price}</span>
       {#if item.tags && item.tags.length > 1}
-        <span class="item-tag-secondary">{item.tags[1]}</span>
+        <div class="tags-row">
+          {#each item.tags.slice(1, 3) as tag}
+            <span class="item-tag-secondary">{tag}</span>
+          {/each}
+        </div>
       {/if}
     </div>
   </div>
@@ -136,6 +140,12 @@
     font-weight: 700;
     color: var(--accent);
     font-size: 1.05rem;
+  }
+
+  .tags-row {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
   }
 
   .item-tag-secondary {

@@ -23,9 +23,6 @@
 <style>
   /* ── Mobile: horizontal pill strip ──────────── */
   .category-nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
     padding: 10px 0;
     border-radius: 0 0 var(--radius-md) var(--radius-md);
     margin-bottom: 20px;
