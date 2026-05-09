@@ -70,6 +70,8 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
+    will-change: transform;
+    touch-action: pan-x pan-y;
   }
 
   .menu-item:hover .item-image {

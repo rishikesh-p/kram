@@ -4,6 +4,11 @@
   }>();
 </script>
 
+<svelte:head>
+  <link rel="preload" as="image" href={restaurant.heroImage} />
+  <link rel="preload" as="image" href={restaurant.logo} />
+</svelte:head>
+
 <div class="hero">
   <div class="hero-bg" style="background-image: url('{restaurant.heroImage}')"></div>
   <div class="hero-overlay"></div>
