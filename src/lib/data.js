@@ -1,8 +1,8 @@
 export const restaurant = {
   name: "Rangoli Sweets & Chaats",
   description: "Authentic North Indian Mithai & Street Food Since 1987",
-  logo: "/images/peacocklogo.png",
-  heroImage: "/images/sweets.png",
+  logo: "/images/peacocklogo.webp",
+  heroImage: "/images/sweets.webp",
 };
 
 export const categories = [
