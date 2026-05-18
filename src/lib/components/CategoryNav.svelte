@@ -73,7 +73,7 @@
     color: #000;
     font-weight: 700;
     border-color: transparent;
-    box-shadow: 0 4px 14px rgba(0, 168, 119, 0.35);
+    box-shadow: 0 4px 14px rgba(var(--accent-rgb), 0.35);
   }
 
   /* ── Desktop: vertical sidebar ───────────────── */
@@ -102,9 +102,9 @@
     }
 
     .nav-btn.active {
-      background: rgba(0, 168, 119, 0.15);
+      background: rgba(var(--accent-rgb), 0.15);
       color: var(--accent);
-      border-color: rgba(0, 168, 119, 0.3);
+      border-color: rgba(var(--accent-rgb), 0.3);
       box-shadow: none;
       font-weight: 600;
     }

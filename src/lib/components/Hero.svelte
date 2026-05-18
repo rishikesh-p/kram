@@ -80,7 +80,7 @@
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid var(--accent);
-    box-shadow: 0 0 20px rgba(0, 168, 119, 0.3);
+    box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.3);
   }
 
   .logo {

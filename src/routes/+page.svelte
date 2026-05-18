@@ -85,6 +85,15 @@
   </div>
 </div>
 
+<footer class="site-footer">
+  <div class="footer-content">
+    <p class="footer-brand">{restaurant.name}</p>
+    <p class="footer-tagline">{restaurant.description}</p>
+    <p class="footer-note">Prices are inclusive of all taxes</p>
+    <p class="footer-note disclaimer">* Images are for illustration purposes only. Actual presentation may vary.</p>
+  </div>
+</footer>
+
 
 <style>
   .menu-layout {
@@ -191,5 +200,33 @@
     .items-grid {
       grid-template-columns: repeat(3, 1fr);
     }
+  }
+
+  /* ── Footer ────────────────────────────────────── */
+  .site-footer {
+    text-align: center;
+    padding: 48px 24px 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    margin-top: 40px;
+  }
+
+  .footer-brand {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .footer-tagline {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+  }
+
+  .footer-note {
+    font-size: 0.7rem;
+    color: rgba(163, 163, 163, 0.5);
   }
 </style>

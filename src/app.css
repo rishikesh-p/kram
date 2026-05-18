@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+/* Google Fonts loaded via <link> in app.html for non-blocking render */
 
 :root {
   --bg-primary: #0a0a0a;
@@ -7,6 +7,7 @@
   --text-primary: #f5f5f5;
   --text-secondary: #a3a3a3;
   --accent: #00a877; /* Peacock Green accent */
+  --accent-rgb: 0, 168, 119; /* Required for rgba() opacity */
   --accent-hover: #00cf93;
   
   --radius-sm: 8px;
@@ -23,6 +24,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body {
@@ -67,10 +70,6 @@ p {
 /* Hide scrollbar for clean UI */
 ::-webkit-scrollbar {
   display: none;
-}
-* {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 /* Responsive Grid System */

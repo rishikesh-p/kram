@@ -51,7 +51,7 @@
   @media (hover: hover) {
     .menu-item:hover {
       transform: translateY(-6px);
-      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 168, 119, 0.3);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(var(--accent-rgb), 0.3);
     }
   }
 
@@ -74,8 +74,10 @@
     touch-action: pan-x pan-y;
   }
 
-  .menu-item:hover .item-image {
-    transform: scale(1.08);
+  @media (hover: hover) {
+    .menu-item:hover .item-image {
+      transform: scale(1.08);
+    }
   }
 
   .badge {
@@ -88,7 +90,7 @@
     text-transform: uppercase;
     padding: 3px 8px;
     border-radius: 20px;
-    background: rgba(0, 168, 119, 0.85);
+    background: rgba(var(--accent-rgb), 0.85);
     color: #fff;
     backdrop-filter: blur(4px);
     z-index: 2;
