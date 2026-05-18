@@ -1,25 +1,25 @@
 <script lang="ts">
-  import { restaurant, categories, items } from '$lib/data.js';
-  import Hero from '$lib/components/Hero.svelte';
-  import CategoryNav from '$lib/components/CategoryNav.svelte';
-  import MenuItem from '$lib/components/MenuItem.svelte';
-  import { onMount } from 'svelte';
+  import { restaurant, categories, items } from "$lib/data.js";
+  import Hero from "$lib/components/Hero.svelte";
+  import CategoryNav from "$lib/components/CategoryNav.svelte";
+  import MenuItem from "$lib/components/MenuItem.svelte";
+  import { onMount } from "svelte";
 
   let activeCategory = $state(categories[0].id);
 
   // Group items by category
   let itemsByCategory = $derived(
-    categories.map(category => ({
+    categories.map((category) => ({
       ...category,
-      items: items.filter(item => item.categoryId === category.id)
-    }))
+      items: items.filter((item) => item.categoryId === category.id),
+    })),
   );
 
   function handleCategorySelect(categoryId: string) {
     activeCategory = categoryId;
     const element = document.getElementById(`category-${categoryId}`);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }
 
@@ -29,18 +29,18 @@
       (entries) => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
-            const id = entry.target.id.replace('category-', '');
+            const id = entry.target.id.replace("category-", "");
             activeCategory = id;
           }
         }
       },
       {
-        rootMargin: '-20% 0px -75% 0px',
-        threshold: 0
-      }
+        rootMargin: "-20% 0px -75% 0px",
+        threshold: 0,
+      },
     );
 
-    document.querySelectorAll('.category-section').forEach((section) => {
+    document.querySelectorAll(".category-section").forEach((section) => {
       observer.observe(section);
     });
 
@@ -55,13 +55,13 @@
 
 <div class="container">
   <Hero {restaurant} />
-  
+
   <div class="menu-layout">
     <aside class="sidebar">
-      <CategoryNav 
-        {categories} 
-        {activeCategory} 
-        onSelect={handleCategorySelect} 
+      <CategoryNav
+        {categories}
+        {activeCategory}
+        onSelect={handleCategorySelect}
       />
     </aside>
 
@@ -69,7 +69,7 @@
       {#each itemsByCategory as category (category.id)}
         <section id="category-{category.id}" class="category-section">
           <h2 class="category-title">{category.name}</h2>
-          
+
           {#if category.items.length === 0}
             <p class="empty-state">No items available.</p>
           {:else}
@@ -89,11 +89,12 @@
   <div class="footer-content">
     <p class="footer-brand">{restaurant.name}</p>
     <p class="footer-tagline">{restaurant.description}</p>
-    <p class="footer-note">Prices are inclusive of all taxes</p>
-    <p class="footer-note disclaimer">* Images are for illustration purposes only. Actual presentation may vary.</p>
+    <!--<p class="footer-note">Prices are inclusive of all taxes</p>-->
+    <p class="footer-note disclaimer">
+      * Images are for illustration purposes only. Actual presentation may vary.
+    </p>
   </div>
 </footer>
-
 
 <style>
   .menu-layout {
@@ -228,5 +229,10 @@
   .footer-note {
     font-size: 0.7rem;
     color: rgba(163, 163, 163, 0.5);
+  }
+
+  .disclaimer {
+    margin-top: 4px;
+    font-style: italic;
   }
 </style>
