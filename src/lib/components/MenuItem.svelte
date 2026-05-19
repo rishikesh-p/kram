@@ -5,6 +5,7 @@
       name: string;
       description: string;
       price: number;
+      unit?: string;
       image: string;
       tags: string[];
     };
@@ -23,7 +24,7 @@
     <h3 class="item-name">{item.name}</h3>
     <p class="item-desc">{item.description}</p>
     <div class="item-footer">
-      <span class="item-price">₹{item.price}</span>
+      <span class="item-price">₹{item.price}{#if item.unit}<span class="item-unit">{item.unit}</span>{/if}</span>
       {#if item.tags && item.tags.length > 1}
         <div class="tags-row">
           {#each item.tags.slice(1, 3) as tag}
@@ -144,6 +145,12 @@
     font-weight: 700;
     color: var(--accent);
     font-size: 1.05rem;
+  }
+
+  .item-unit {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
   }
 
   .tags-row {
