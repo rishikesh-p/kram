@@ -1,6 +1,6 @@
 export const restaurant = {
   name: "Rangoli Sweets & Chaats",
-  description: "Authentic Indian Mithai & Street Food",
+  description: "Authentically Crafted with Pure Milk & Love",
   logo: "/images/logo.png",
   heroImage: "/images/sweets.webp",
 };
