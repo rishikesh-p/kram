@@ -89,9 +89,14 @@
   <div class="footer-content">
     <p class="footer-brand">{restaurant.name}</p>
     <p class="footer-tagline">{restaurant.description}</p>
-    <!--<p class="footer-note">Prices are inclusive of all taxes</p>-->
     <p class="footer-note disclaimer">
       * Images are for illustration purposes only. Actual presentation may vary.
+    </p>
+  </div>
+  <div class="footer-powered">
+    <p class="powered-label">Powered by <a href="https://scandesk.pages.dev/" target="_blank" rel="noopener noreferrer" class="powered-brand">ScanDesk</a></p>
+    <p class="powered-cta">Get your digital menu ·
+      <a href="tel:+916369169287" class="powered-phone">+91 63691 69287</a>
     </p>
   </div>
 </footer>
@@ -234,5 +239,39 @@
   .disclaimer {
     margin-top: 4px;
     font-style: italic;
+  }
+
+  .footer-powered {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  .powered-label {
+    font-size: 0.7rem;
+    color: rgba(163, 163, 163, 0.4);
+  }
+
+  .powered-brand {
+    font-weight: 600;
+    color: rgba(163, 163, 163, 0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .powered-brand:hover {
+    color: var(--accent);
+  }
+
+  .powered-cta {
+    font-size: 0.65rem;
+    color: rgba(163, 163, 163, 0.35);
+    margin-top: 4px;
+  }
+
+  .powered-phone {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
   }
 </style>
