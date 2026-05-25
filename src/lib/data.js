@@ -28,9 +28,9 @@ export const items = [
   { id: "se4", categoryId: "short-eats", name: "Pav Bhaji (With Cheese)", description: "Classic pav bhaji topped with a generous layer of melted cheese.", price: 110, image: "/images/PAVBHAJICHEESE.webp", tags: ["Cheesy"] },
   { id: "se5", categoryId: "short-eats", name: "Chole Bhature", description: "Fluffy deep-fried bhature served with spiced chickpea curry.", price: 150, image: "/images/CHOLEBHATURE.webp", tags: [] },
   { id: "se6", categoryId: "short-eats", name: "Plain Paratha", description: "Flaky layered whole wheat paratha, golden and buttery.", price: 50, image: "/images/PLAINPARATHA.webp", tags: [] },
-  { id: "se7", categoryId: "short-eats", name: "Aloo Paratha", description: "Stuffed with spiced mashed potatoes, served with curd & pickle.", price: 80, image: "/images/ALOOPARATHA.webp", tags: [] },
+  { id: "se7", categoryId: "short-eats", name: "Aloo Paratha", description: "Stuffed with spiced mashed potatoes, served with curd & pickle.", price: 80, image: "/images/AlooParatha.jpeg", tags: [] },
   { id: "se8", categoryId: "short-eats", name: "Cheese Paratha", description: "Paratha loaded with melted cheese, crispy on the outside.", price: 120, image: "/images/CHEESEPAROTHA.webp", tags: [] },
-  { id: "se9", categoryId: "short-eats", name: "Paneer Paratha", description: "Stuffed with crumbled paneer and mild spices.", price: 120, image: "/images/PANEERPARATHA.webp", tags: [] },
+  { id: "se9", categoryId: "short-eats", name: "Paneer Paratha", description: "Stuffed with crumbled paneer and mild spices.", price: 120, image: "/images/PaneerParatha.jpeg", tags: [] },
 
   // ─── EXTRAS ─────────────────────────────────────────────────────────────
   { id: "ex1", categoryId: "extras", name: "Extra Pav", description: "Soft toasted pav bun.", price: 15, image: "/images/ExtraPav.webp", tags: [] },
