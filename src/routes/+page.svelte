@@ -94,7 +94,7 @@
     </p>
   </div>
   <div class="footer-powered">
-    <p class="powered-label">Powered by <a href="https://scandesk.pages.dev/" target="_blank" rel="noopener noreferrer" class="powered-brand">ScanDesk</a></p>
+    <p class="powered-label">Powered by <span class="powered-brand">ScanDesk</span></p>
     <p class="powered-cta">Get your digital menu ·
       <a href="tel:+916369169287" class="powered-phone">+91 63691 69287</a>
     </p>
