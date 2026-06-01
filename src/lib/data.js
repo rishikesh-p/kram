@@ -17,6 +17,7 @@ export const categories = [
   { id: "drinks", name: "Drinks" },
   { id: "shakes", name: "Shakes" },
   { id: "mojitos", name: "Mojitos" },
+  { id: "gift-boxes", name: "Gift Boxes" },
 ];
 
 export const items = [
@@ -85,8 +86,6 @@ export const items = [
   { id: "sw21", categoryId: "sweets", name: "Soanpapdi", description: "Light, flaky, melt-in-your-mouth sweet made with besan.", price: 160, unit: "/box", image: "/images/Soanpapdi.webp", tags: [] },
   { id: "sw22", categoryId: "sweets", name: "Ghee Jalebi", description: "Crispy, syrup-soaked spirals fried in pure desi ghee.", price: 550, unit: "/kg", image: "/images/GheeJalebi.webp", tags: [] },
   { id: "sw23", categoryId: "sweets", name: "Besan Patisa", description: "Flaky, soft layered sweet made from besan and ghee.", price: 650, unit: "/kg", image: "/images/BesanPatisa.webp", tags: [] },
-  { id: "sw24", categoryId: "sweets", name: "Assorted Normal Box (1 kg)", description: "A mixed selection of our finest everyday sweets.", price: 990, image: "/images/AssortedNormalBox.webp", tags: [] },
-  { id: "sw25", categoryId: "sweets", name: "Assorted Gift Box (1 kg)", description: "A premium assortment of sweets, perfectly packed for gifting.", price: 1040, image: "/images/AssortedGiftBox1kg.webp", tags: [] },
   { id: "sw26", categoryId: "sweets", name: "Moong Dal Halwa", description: "Rich, aromatic dessert made with split yellow moong dal and ghee.", price: 750, unit: "/kg", image: "/images/MoongDalHalwa.webp", tags: [] },
 
   // ─── CHAATS ─────────────────────────────────────────────────────────────
@@ -163,4 +162,8 @@ export const items = [
   { id: "mj9", categoryId: "mojitos", name: "Passion Fruit Mojito", description: "Exotic passion fruit with mint and lime soda.", price: 80, image: "/images/PassionFruitMojito.webp", tags: [] },
   { id: "mj10", categoryId: "mojitos", name: "Pineapple Mojito", description: "Tropical pineapple with fresh mint and soda.", price: 80, image: "/images/PineappleMojito.webp", tags: [] },
   { id: "mj11", categoryId: "mojitos", name: "Guava Mojito", description: "Fresh guava with mint and sparkling soda.", price: 80, image: "/images/GuavaMojito.webp", tags: [] },
+
+  // ─── GIFT BOXES ──────────────────────────────────────────────────────────
+  { id: "gb1", categoryId: "gift-boxes", name: "Assorted Normal Box (1 kg)", description: "A mixed selection of our finest everyday sweets.", price: 990, image: "/images/AssortedNormalBox.webp", tags: [] },
+  { id: "gb2", categoryId: "gift-boxes", name: "Assorted Gift Box (1 kg)", description: "A premium assortment of sweets, perfectly packed for gifting.", price: 1040, image: "/images/AssortedGiftBox1kg.webp", tags: [] },
 ];
