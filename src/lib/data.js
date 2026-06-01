@@ -28,9 +28,9 @@ export const items = [
   { id: "se4", categoryId: "short-eats", name: "Pav Bhaji (With Cheese)", description: "Classic pav bhaji topped with a generous layer of melted cheese.", price: 110, image: "/images/PAVBHAJICHEESE.webp", tags: ["Cheesy"] },
   { id: "se5", categoryId: "short-eats", name: "Chole Bhature", description: "Fluffy deep-fried bhature served with spiced chickpea curry.", price: 150, image: "/images/CHOLEBHATURE.webp", tags: [] },
   { id: "se6", categoryId: "short-eats", name: "Plain Paratha", description: "Flaky layered whole wheat paratha, golden and buttery.", price: 50, image: "/images/PLAINPARATHA.webp", tags: [] },
-  { id: "se7", categoryId: "short-eats", name: "Aloo Paratha", description: "Stuffed with spiced mashed potatoes, served with curd & pickle.", price: 80, image: "/images/AlooParatha.jpeg", tags: [] },
+  { id: "se7", categoryId: "short-eats", name: "Aloo Paratha", description: "Stuffed with spiced mashed potatoes, served with curd & pickle.", price: 80, image: "/images/AlooParatha.webp", tags: [] },
   { id: "se8", categoryId: "short-eats", name: "Cheese Paratha", description: "Paratha loaded with melted cheese, crispy on the outside.", price: 120, image: "/images/CHEESEPAROTHA.webp", tags: [] },
-  { id: "se9", categoryId: "short-eats", name: "Paneer Paratha", description: "Stuffed with crumbled paneer and mild spices.", price: 120, image: "/images/PaneerParatha.jpeg", tags: [] },
+  { id: "se9", categoryId: "short-eats", name: "Paneer Paratha", description: "Stuffed with crumbled paneer and mild spices.", price: 120, image: "/images/PaneerParatha.webp", tags: [] },
 
   // ─── EXTRAS ─────────────────────────────────────────────────────────────
   { id: "ex1", categoryId: "extras", name: "Extra Pav", description: "Soft toasted pav bun.", price: 15, image: "/images/ExtraPav.webp", tags: [] },
@@ -76,6 +76,18 @@ export const items = [
   { id: "sw12", categoryId: "sweets", name: "Mawa Gujiya", description: "Crispy pastry filled with sweetened mawa and dry fruits.", price: 650, unit: "/kg", image: "/images/MawaGujiya.webp", tags: [] },
   { id: "sw13", categoryId: "sweets", name: "Mathura Peda", description: "Traditional Mathura-style peda with a rustic, grainy texture.", price: 650, unit: "/kg", image: "/images/MathuraPeda.webp", tags: [] },
   { id: "sw14", categoryId: "sweets", name: "Balushai", description: "Flaky deep-fried pastry soaked in sugar syrup, soft and sweet.", price: 600, unit: "/kg", image: "/images/Balushai.webp", tags: [] },
+  { id: "sw15", categoryId: "sweets", name: "Boondi Laddu", description: "Sweet, juicy besan boondi shaped into laddoos.", price: 660, unit: "/kg", image: "/images/BoondiLaddu.webp", tags: [] },
+  { id: "sw16", categoryId: "sweets", name: "Kalakkand", description: "Rich, grainy milk cake made with sweetened condensed milk and paneer.", price: 750, unit: "/kg", image: "/images/Kalakkand.webp", tags: [] },
+  { id: "sw17", categoryId: "sweets", name: "Kaju Burfi", description: "Premium cashew fudge, rich and melt-in-the-mouth.", price: 1300, unit: "/kg", image: "/images/KajuBurfi.webp", tags: [] },
+  { id: "sw18", categoryId: "sweets", name: "Kaju Patisa", description: "Flaky, layered sweet made with cashews, besan, and ghee.", price: 1300, unit: "/kg", image: "/images/KajuPatisa.webp", tags: [] },
+  { id: "sw19", categoryId: "sweets", name: "Kaja", description: "Crispy, layered pastry dipped in sugar syrup.", price: 600, unit: "/kg", image: "/images/Kaja.webp", tags: [] },
+  { id: "sw20", categoryId: "sweets", name: "Anjeer Burfi", description: "Healthy and delicious dried fig and nut fudge.", price: 1300, unit: "/kg", image: "/images/AnjeerBurfi.webp", tags: [] },
+  { id: "sw21", categoryId: "sweets", name: "Soanpapdi", description: "Light, flaky, melt-in-your-mouth sweet made with besan.", price: 160, unit: "/box", image: "/images/Soanpapdi.webp", tags: [] },
+  { id: "sw22", categoryId: "sweets", name: "Ghee Jalebi", description: "Crispy, syrup-soaked spirals fried in pure desi ghee.", price: 550, unit: "/kg", image: "/images/GheeJalebi.webp", tags: [] },
+  { id: "sw23", categoryId: "sweets", name: "Besan Patisa", description: "Flaky, soft layered sweet made from besan and ghee.", price: 650, unit: "/kg", image: "/images/BesanPatisa.webp", tags: [] },
+  { id: "sw24", categoryId: "sweets", name: "Assorted Normal Box (1 kg)", description: "A mixed selection of our finest everyday sweets.", price: 990, image: "/images/AssortedNormalBox.webp", tags: [] },
+  { id: "sw25", categoryId: "sweets", name: "Assorted Gift Box (1 kg)", description: "A premium assortment of sweets, perfectly packed for gifting.", price: 1040, image: "/images/AssortedGiftBox1kg.webp", tags: [] },
+  { id: "sw26", categoryId: "sweets", name: "Moong Dal Halwa", description: "Rich, aromatic dessert made with split yellow moong dal and ghee.", price: 750, unit: "/kg", image: "/images/MoongDalHalwa.webp", tags: [] },
 
   // ─── CHAATS ─────────────────────────────────────────────────────────────
   { id: "ch1", categoryId: "chaats", name: "Pani Puri", description: "Crispy puris filled with spiced water, tamarind, and potato.", price: 70, image: "/images/PANIPURI.webp", tags: ["Bestseller"] },
