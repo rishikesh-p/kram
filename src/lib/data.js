@@ -1,6 +1,9 @@
 export const restaurant = {
   name: "Rangoli Sweets & Chaats",
-  description: "Authentically Crafted with Pure Milk & Love",
+  description: "Authentically Crafted with Pure Milk & Ghee",
+  phone: "+91 89210 46664",
+  instagram: "https://www.instagram.com/rangoli_sweets_chats?igsh=MTIwOWp0NW01OWF6dg==",
+  location: "https://maps.app.goo.gl/jF9YQW1RJudZ1swr8?g_st=ac",
   logo: "/images/logo.png",
   heroImage: "/images/sweets.webp",
 };

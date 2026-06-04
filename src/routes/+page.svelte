@@ -89,6 +89,27 @@
   <div class="footer-content">
     <p class="footer-brand">{restaurant.name}</p>
     <p class="footer-tagline">{restaurant.description}</p>
+    
+    <div class="restaurant-links">
+      {#if restaurant.phone}
+        <a href="tel:{restaurant.phone.replace(/\s+/g, '')}" class="contact-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Call
+        </a>
+      {/if}
+      {#if restaurant.location}
+        <a href="{restaurant.location}" target="_blank" rel="noopener noreferrer" class="contact-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Map
+        </a>
+      {/if}
+      {#if restaurant.instagram}
+        <a href="{restaurant.instagram}" target="_blank" rel="noopener noreferrer" class="contact-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+          Insta
+        </a>
+      {/if}
+    </div>
     <p class="footer-note disclaimer">
       * Images are for illustration purposes only. Actual presentation may vary.
     </p>
@@ -217,18 +238,53 @@
   }
 
   .footer-brand {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--accent);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 6px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #fff, rgba(255,255,255,0.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .footer-tagline {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     color: var(--text-secondary);
-    margin-bottom: 12px;
+    margin-bottom: 1.5rem;
+  }
+
+  .restaurant-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  .contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .contact-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+    color: var(--text);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .contact-btn svg {
+    color: var(--accent);
+    opacity: 0.9;
   }
 
   .footer-note {
