@@ -154,6 +154,7 @@
     /* Equal padding on both sides so first and last cards aren't touching screen edges */
     padding: 12px 24px 20px 24px;
     margin: 0 -16px;
+    scroll-padding-inline: 24px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     align-items: stretch;
