@@ -104,8 +104,18 @@
         </a>
       {/if}
       {#if restaurant.instagram}
-        <a href="{restaurant.instagram}" target="_blank" rel="noopener noreferrer" class="contact-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+        <a href="{restaurant.instagram}" target="_blank" rel="noopener noreferrer" class="contact-btn insta-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="url(#insta-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <defs>
+              <linearGradient id="insta-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#fdf497" />
+                <stop offset="25%" stop-color="#fd5949" />
+                <stop offset="50%" stop-color="#d6249f" />
+                <stop offset="100%" stop-color="#285AEB" />
+              </linearGradient>
+            </defs>
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+          </svg>
           Insta
         </a>
       {/if}
