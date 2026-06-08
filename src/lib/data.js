@@ -167,6 +167,7 @@ export const items = [
   { id: "mj11", categoryId: "mojitos", name: "Guava Mojito", description: "Fresh guava with mint and sparkling soda.", price: 80, image: "/images/GuavaMojito.webp", tags: [] },
 
   // ─── GIFT BOXES ──────────────────────────────────────────────────────────
-  { id: "gb1", categoryId: "gift-boxes", name: "Assorted Normal Box (1 kg)", description: "A mixed selection of our finest everyday sweets.", price: 990, image: "/images/AssortedNormalBox.webp", tags: [] },
-  { id: "gb2", categoryId: "gift-boxes", name: "Assorted Gift Box (1 kg)", description: "A premium assortment of sweets, perfectly packed for gifting.", price: 1040, image: "/images/AssortedGiftBox1kg.webp", tags: [] },
+  { id: "gb1", categoryId: "gift-boxes", name: "Assorted Gift Box (250 gm)", description: "A mixed selection of our finest everyday sweets.", price: 280, image: "/images/AssortedNormalBox.webp", tags: [] },
+  { id: "gb2", categoryId: "gift-boxes", name: "Assorted Gift Box (500 gm)", description: "A mixed selection of our finest everyday sweets.", price: 520, image: "/images/AssortedGiftBox500gm.webp", tags: [] },
+  { id: "gb3", categoryId: "gift-boxes", name: "Assorted Gift Box (1 kg)", description: "A premium assortment of sweets, perfectly packed for gifting.", price: 1040, image: "/images/AssortedGiftBox1kg.webp", tags: [] },
 ];
